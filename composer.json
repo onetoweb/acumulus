@@ -1,0 +1,31 @@
+{
+    "name": "onetoweb/acumulus",
+    "description": "Acumulus API Client",
+    "keywords": [
+        "api",
+        "php",
+        "acumulus"
+    ],
+    "type": "library",
+    "homepage": "https://github.com/onetoweb/acumulus",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Jonathan van 't Ende",
+            "email": "jvantende@onetoweb.nl"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "spatie/array-to-xml": "^2.15",
+        "guzzlehttp/guzzle": "^7.3"
+    },
+    "require-dev": {
+        "symfony/error-handler": "^5.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Onetoweb\\Acumulus\\": "src/"
+        }
+    }
+}
