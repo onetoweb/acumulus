@@ -15,6 +15,18 @@ use Onetoweb\Acumulus\BaseClient;
 class AcumulusClient extends BaseClient
 {
     /**
+     * @link https://www.siel.nl/acumulus/API/Invoicing/Get_PDF_Invoice/
+     *
+     * @return string
+     */
+    public static function getInvoiceUrl(string $token)
+    {
+        return self::BASE_URI.'acumulus/stable/invoices/invoice_get_pdf.php?' . http_build_query([
+            'token' => $token
+        ]);
+    }
+    
+    /**
      * @link https://www.siel.nl/acumulus/API/Accounts/Manage_Account/
      *
      * @param array $data

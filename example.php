@@ -38,6 +38,10 @@ $invoice = $client->addInvoice([
     ],
 ]);
 
+// get invoice url
+$token = '';
+$invoiceUrl = AcumulusClient::getInvoiceUrl($token);
+
 // get contact
 $contactId = 42;
 $contact = $client->getContact($contactId);
