@@ -121,7 +121,7 @@ class BaseClient
         $result = $guzzleClient->request('POST', $endpoint, $options);
         
         // json decode contents
-        $contents = json_decode($result->getBody()->getContents(), true);
+        $contents = json_decode($result->getBody()->getContents(), true, 512, JSON_BIGINT_AS_STRING);
         
         // return contents
         return $contents;
